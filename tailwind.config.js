@@ -25,6 +25,14 @@ tailwind.config = {
             'text': "linear-gradient(110deg, #A54E2B -53.83%, #DC9853 62.61%)",
             'aroundBg': "url(./images/aroundbg.jpg)"
         },
+        screens: {
+          'xs': '400px',
+          'sm': '576px',
+          'md': '768px',
+          'lg': '1024px',
+          'xl': '1280px',
+          '2xl': '1436px',
+        },    
       }
     }
   }

@@ -12,30 +12,37 @@
 </head>
 <body>
         <!-- ====== Navbar Start Here ====== -->
-    <nav class="bg-navbg py-3">
-        <div class="max-w-container mx-auto">
+    <nav class="bg-navbg py-6 lg:py-3 overflow-hidden">
+        <div class="max-w-container mx-auto px-3 xl:px-0">
             <div class="flex items-center justify-between">
                 <div class="flex items-center gap-x-16">
                     <div class="w-[200px]  relative after:absolute after:content[''] after:w-[2px] after:h-[80px] after:bg-white after:right-0 after:top-[-24px] after:opacity-10">
-                        <img src="./images/logo.png" alt="Logo">
+                        <picture>
+                            <img src="./images/logo.png" alt="Logo">
+                        </picture>
                     </div>
-                    <ul class="flex gap-x-12 items-center">
-                        <li>
-                            <a href="#" class="text-white font-bold text-base uppercase font-roboto opacity-90 hover:text-primary hover:transition-all hover:duration-300">home</a>
-                        </li>
-                        <li>
-                            <a href="#" class="text-white font-bold text-base uppercase font-roboto opacity-90 hover:text-primary hover:transition-all hover:duration-300">about us</a>
-                        </li>
-                        <li>
-                            <a href="#" class="text-white font-bold text-base uppercase font-roboto opacity-90 hover:text-primary hover:transition-all hover:duration-300">sermon</a>
-                        </li>
-                        <li>
-                            <a href="#" class="text-white font-bold text-base uppercase font-roboto opacity-90 hover:text-primary hover:transition-all hover:duration-300">blog</a>
-                        </li>
-                    </ul>
+                    <div class="hidden lg:block">
+                        <ul class="flex gap-x-12 items-center">
+                            <li>
+                                <a href="#" class="text-white font-bold text-base uppercase font-roboto opacity-90 hover:text-primary hover:transition-all hover:duration-300">home</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-white font-bold text-base uppercase font-roboto opacity-90 hover:text-primary hover:transition-all hover:duration-300">about us</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-white font-bold text-base uppercase font-roboto opacity-90 hover:text-primary hover:transition-all hover:duration-300">sermon</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-white font-bold text-base uppercase font-roboto opacity-90 hover:text-primary hover:transition-all hover:duration-300">blog</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <div>
+                <div class="hidden lg:block">
                     <a href="#" class="inline-block text-[#1C1D28] font-normal taxt-base font-normal leading-4 uppercase py-5 px-12 bg-primary rounded-xl hover:bg-lightgray hover:transition-all hover:duration-300">contact us</a>
+                </div>
+                <div class="lg:hidden">
+                    <i class="fa-solid fa-bars-staggered text-2xl text-white"></i>
                 </div>
             </div>
         </div>
@@ -45,13 +52,13 @@
 
         <!-- ====== Banner Start Here ====== -->
     <section class="bg-banner py-[128px] bg-center bg-cover bg-no-repeat">
-        <div class="max-w-container mx-auto">
-            <h4 class="text-white font-bold text-base uppercase">Welcome to our CHURCH</h4>
-            <h1 class="w-[592px] text-white text-[64px] mt-4 leading-[82px] font-roboto font-bold uppercase tracking-[-0.64px]">Become a part of our community</h1>
+        <div class="max-w-container mx-auto px-3 xl:px-0">
+            <h4 class="max-w-[220px] text-white font-bold text-base uppercase">Welcome to our CHURCH</h4>
+            <h1 class="max-w-[400px] md:max-w-[592px] text-white text-[40px] xs:text-[48px] md:text-[64px] mt-4 leading-[82px] font-roboto font-bold uppercase tracking-[-0.64px]">Become a part of our community</h1>
             <a href="#" class="inline-block text-[#1C1D28] text-base font-normal leading-4 uppercase py-6 px-16 bg-primary font-normal rounded-xl mt-8 hover:bg-lightgray hover:transition-all hover:duration-300">learn more</a>
             <div class="mt-16 flex items-start">
                 <div class="w-[18px] h-[2px] bg-primary translate-y-full mt-3"></div>
-                <p class="text-white w-[308px] ml-[30px] text-base font-roboto font-normal leading-[24px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.</p>
+                <p class="text-white max-w-[308px] ml-[30px] text-base font-roboto font-normal leading-[24px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.</p>
             </div>
         </div>
     </section>
@@ -60,11 +67,11 @@
 
         <!-- ====== About Start Here ====== -->
      <section class="mt-[128px]">
-        <div class="max-w-container mx-auto">
+        <div class="max-w-container mx-auto px-3 xl:px-0">
             <h5 class="taxt-base font-normal font-roboto uppercase text-black text-center">sub-headline</h5>
-            <h2 class="text-[48px] text-black text-center font-roboto font-bold uppercase leading-[64px] tracking-[-0.48px] mt-4">a church that's relevant</h2>
-            <div class="flex items-center gap-6 flex-wrap mt-16">
-                <div class="w-[410px] h-[380px] bg-[#FFF5EB] pt-20 pl-20 relative">
+            <h2 class="max-w-[520px] md:max-w-[700px] mx-auto text-[48px] text-black text-center font-roboto font-bold uppercase leading-[64px] tracking-[-0.48px] mt-4">a church that's relevant</h2>
+            <div class="flex items-center justify-center gap-6 flex-wrap mt-16">
+                <div class="w-[350px] sm:w-[410px] h-[340px] md:h-[380px] bg-[#FFF5EB] pt-[60px] md:pt-20 pl-[60px] md:pl-20 relative">
                     <div class="w-[48px] h-[48px] rounded-full bg-primary flex items-center justify-center">
                         <i class="fa-solid fa-hands-holding-circle text-2xl"></i>
                     </div>
@@ -72,7 +79,7 @@
                     <p class="w-[251px] text-base text-black font-roboto font-normal leading-[24px] mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     <div class="w-full h-4 bg-primary absolute bottom-0 left-0"></div>
                 </div>
-                <div class="w-[410px] h-[380px] bg-[#FFF5EB] pt-20 pl-20 relative">
+                <div class="w-[350px] sm:w-[410px] h-[340px] md:h-[380px] bg-[#FFF5EB] pt-[60px] md:pt-20 pl-[60px] md:pl-20 relative">
                     <div class="w-[48px] h-[48px] rounded-full bg-primary flex items-center justify-center">
                         <i class="fa-solid fa-wifi text-2xl"></i>
                     </div>
@@ -80,7 +87,7 @@
                     <p class="w-[251px] text-base text-black font-roboto font-normal leading-[24px] mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     <div class="w-full h-4 bg-primary absolute bottom-0 left-0"></div>
                 </div>
-                <div class="w-[410px] h-[380px] bg-[#FFF5EB] pt-20 pl-20 relative">
+                <div class="w-[350px] sm:w-[410px] h-[340px] md:h-[380px] bg-[#FFF5EB] pt-[60px] md:pt-20 pl-[60px] md:pl-20 relative">
                     <div class="w-[48px] h-[48px] rounded-full bg-primary flex items-center justify-center">
                         <i class="fa-solid fa-hand-holding-heart text-2xl"></i>
                     </div>
@@ -96,7 +103,7 @@
 
 
         <!-- ====== Love area Start Here ====== -->
-    <section class="py-[128px]">
+    <!-- <section class="py-[128px]">
         <div class="max-w-container mx-auto">
             <div class="text-center">
                 <h5 class="taxt-base font-normal font-roboto uppercase text-black text-center">sub-headline</h5>
@@ -120,12 +127,12 @@
             <p class="w-[512px] text-base font-normal font-roboto text-black mt-4 leading-6 opacity-78 text-center mx-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             <a href="#" class="text-sm font-roboto font-normal text-black leading-4 flex items-center justify-center mt-4">read more<i class="fa-solid fa-arrow-right-long ml-[6px]"></i></a>
         </div>
-    </section>
+    </section> -->
         <!-- ====== Love area End Here ====== -->
 
 
         <!-- ====== Benefit Part Start Here ====== -->
-    <section class="bg-[#F5F2F0] py-[128px]">
+    <!-- <section class="bg-[#F5F2F0] py-[128px]">
         <div class="max-w-container mx-auto">
             <h5 class="taxt-base font-normal font-roboto uppercase text-black text-center">Watch and listen</h5>
             <h2 class="w-[432px] text-[48px] text-black font-roboto font-bold leading-16 tracking-[-0.48px] uppercase text-center mx-auto mt-5">THE benefits of joining our church</h2>
@@ -160,12 +167,12 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
         <!-- ====== Benefit Part End Here ====== -->
 
 
         <!-- ====== Join Part Start Here ====== -->
-    <section class="pt-[128px] pb-[208px]">
+    <!-- <section class="pt-[128px] pb-[208px]">
         <div class="max-w-container mx-auto">
             <h5 class="taxt-base font-normal font-roboto uppercase text-black text-center">Watch and listen</h5>
             <h2 class="w-[554px] text-[48px] text-black font-roboto font-bold leading-16 tracking-[-0.48px] uppercase text-center mx-auto mt-5">join us and become part of something great</h2>
@@ -194,12 +201,12 @@
             </div>
             <a href="#" class="text-[24px] text-black font-normal font-roboto flex items-center justify-end mt-12">View all Sermons<i class="fa-solid fa-arrow-right-long ml-[11px]"></i></a>
         </div>
-    </section>
+    </section> -->
         <!-- ====== Join Part End Here ====== -->
         
         
         <!-- ====== Around part Start Here ====== -->
-    <section class="bg-aroundBg py-[128px] bg-cover bg-center bg-no-repeat">
+    <!-- <section class="bg-aroundBg py-[128px] bg-cover bg-center bg-no-repeat">
         <div class="max-w-container mx-auto">
             <div class="bg-white py-[72px] pl-12 w-[768px] mx-auto relative">
                 <h2 class="w-[368px] text-[48px] text-black font-bold font-roboto leading-16 tracking-[-0.48px] uppercase">We want to serve the world around us</h2>
@@ -211,12 +218,12 @@
                 <div class="absolute h-4 w-full bottom-0 left-0 bg-primary"></div>
             </div>
         </div>
-    </section>
+    </section> -->
         <!-- ====== Around part End Here ====== -->
 
 
         <!-- ====== Blog Area Start Here ====== -->
-    <section class="my-[128px]">
+    <!-- <section class="my-[128px]">
         <div class="max-w-container mx-auto">
             <h5 class="text-base text-black font-normal font-roboto uppercase text-center">Read our Blog</h5>
             <h2 class="w-[585px] text-[48px] text-black font-bold font-roboto leading-16 tracking-[-0.48px] mt-4 mx-auto">SHARE, INSPIRE, INNOVATE</h2>
@@ -251,12 +258,12 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
         <!-- ====== Blog Area End Here ====== -->
 
 
         <!-- ====== Footer Start Here ====== -->
-    <footer class="bg-black py-16"> 
+    <!-- <footer class="bg-black py-16"> 
         <div class="max-w-container mx-auto">
             <div class="flex justify-between">
                 <div>
@@ -306,7 +313,7 @@
                 </div>
             </div>
         </div>
-    </footer>
+    </footer> -->
         <!-- ====== Footer End Here ====== -->
 
     <script src="tailwind.config.js"></script>
